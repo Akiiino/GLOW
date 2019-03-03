@@ -1,0 +1,53 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{cmap}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+
+\usepackage[top=0.8in,bottom=0.8in,left=0.8in,right=0.8in,headheight=110pt]{geometry}
+\usepackage{mathtools,amsfonts,amstext,amssymb,amsthm,bm}
+\usepackage{indentfirst}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{arrows,chains,matrix,positioning,scopes}
+\usetikzlibrary{plotmarks,patterns}
+
+\theoremstyle{definition}
+\newtheorem{problem}{Задача}
+\renewcommand{\vec}[1]{\bm{#1}}
+\newcommand{\given}{\,|\,}
+\DeclareMathOperator{\tr}{tr}
+\newcommand{\diff}{\mathop{}\!\mathrm{d}} 
+\renewcommand{\phi}{\varphi}
+%\renewcommand{\vec}[1]{\bm{#1}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\Pr}{\operatorname{\mathsf{P}}}
+
+\title{\textbf{Report}}
+\author{Popov Nikita, Sharafian David}
+\date{}
+
+\begin{document}
+	\maketitle
+	
+	\section{Layes}
+	
+	\subsection{Actnorm}
+	
+	
+	
+	\subsection{Invertible $1\times 1$ convolution}
+	
+	Given a tensor of shape $h \times w \times c$, we perform a $1\times 1$ convolution with weights matrix $W$ of shape $c\times c$. Because the matrix is square it is possible to calculate the inverse matrix $W^{-1}$ and with that we can calculate inverse function of convolution.
+	
+	\begin{align*}
+	\text{Function: }\forall i, j: y_{i,j} = Wx_{i,j} \\
+	\text{Inverse function: }\forall i, j: x_{i,j} = W^{-1}y_{i,j} \\
+	\text{Log-determinant: } hw\log{|\det W|}
+	\end{align*}
+	
+	\subsection{Invertible $1\times 1$ convolution}
+
+\end{document}
